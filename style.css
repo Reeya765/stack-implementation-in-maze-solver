@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.puzzle {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin-bottom: 20px;
+}
+
+.tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background-color: #add8e6; /* Light blue color */
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.empty {
+  background-color: #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+#moveStack {
+  list-style-type: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+#message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
